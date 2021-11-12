@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Montserrat:wght@300&display=swap');
+
+:root {
+    --white: #fff;
+    --light: #f8f9fa;
+    --primary: #007bff;
+    --blue: #007bff;
+    --shadow:0 0 25px rgba(0, 0, 0, 0.1);
+    --drop:0 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color:#F5F5F5;
+}
+
+
+.header {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--drop);
+}
+.header .logo {
+    width:135px;
+    margin: 5px;
+}
+.header .logo img{
+    max-width: 100%;
+}
+
+.main{
+    margin:20px auto;
+    text-align: left;
+}
+
+.main .title h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    margin:0 10px;
+}
+
+
+.main .form-container{
+    margin: 15px auto;;
+    
+    max-width: 1000px;
+}
+
+.main .form-container .form{
+    padding:10px;
+    text-transform: capitalize;
+    font-size: 1em;
+    margin:14px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow) ;
+}
+
+.main .row{
+    width:100%;
+}
+
+.main .input input{
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 5px;;
+    border:.5px solid #ced4da;
+    transition: all 0.2s ease;
+    outline: none;
+    
+}
+.main .input input:focus{
+    outline:4px solid rgba(31, 139, 255, 0.75)
+}
+.main .input input:hover{
+    outline:3px solid var(--primary)
+}
+
+.row .label{
+    padding: 15px 0;
+}
+
+.row .label label{ 
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.radio{
+    display:flex;
+    align-items: center;
+}
+
+
+.row .input .radio label{
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+    padding:5px;
+}
+
+
+.row .input .radio input{
+   width:15px;
+   height:15px;
+}
+
+.row .input .radio input:hover{
+    outline:none;
+}
+
+.row .input .radio input :focus{
+    outline: 2px solid transparent
+}
+.buttons{
+    margin: 18px 0;
+}
+
+.buttons input{
+    
+    /* font-family: 'Montserrat', sans-serif; */
+    text-transform: capitalize;
+    padding:12px;
+    border-radius: 5px;
+}
+
+.buttons #submit{
+    background-color:var(--primary);
+    color:var(--white);
+    
+    border:none;
+}
+
+.buttons #reset{
+    border:none;
+    margin-left:5px;
+}
+
+.burger{
+    padding-right: 10px;
+}
+
+.burger h1{
+    padding: 5px 20px;
+    font-size: 24px;
+    background-color:#F5F5F5;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width:768px){
+    .row{
+        display:flex;
+        align-items:center;
+    }
+
+    .row .label{
+        width:40%;
+        padding:15px 25px;
+    }
+
+    .row .input{
+        width: 100%;
+    }
+
+    #radios{
+        margin-top:20px;
+    }
+
+    #about{
+        align-self: start;
+    }
+
+    .burger{
+        display:none;
+    }
+}

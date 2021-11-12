@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cybervie Training Enrolment Form</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo.gif" alt="logo">
+        </div>
+
+        <div class="burger">
+            <h1>&#9776</h1>
+            
+        </div>
+    </div>
+
+    <div class="main">
+        
+
+        <div class="form-container">
+            <div class="title">
+                <h1>Cybervie Training Enrolment Form</h1>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="row">
+                        <div class="label"><label for="first-name">first name</label></div>
+                        <div class="input"><input type="text" id="first-name" name="first-name" /></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label"> <label for="last-name">last name</label></div>
+                        <div class="input"><input type="text" id="last-name" name="last-name" /></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label"><label for="phone-number">phone number</label></div>
+                        <div class="input"> <input type="number" id="phone-number" name="phone-number" /></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label"><label for="email">email</label></div>
+                        <div class="input"> <input type="email" id="email" name="email" /></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label"><label for="educational-background">educational background</label></div>
+                        <div class="input"><input type="text" id="eb" name="educational-background"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label"><label for="work-exprience">work exprience</label></div>
+                        <div class="input">
+                            <div class="radio" id="radios">
+                                <input type="radio" id="fresher" name="exprience" value="fresher" required="required" />
+                                <label for="fresher">fresger</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" id="exprienced" name="exprience" value="exprienced" required="required" />
+                                <label for="exprienced">exprienced</label>
+                                </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label"><label for="work-exprience-details">work exprience details</label></div>
+                        <div class="input"><input type="text" id="wed" name="wed" /></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label"><label for="expectation">Expectation after completion of course</label></div>
+                        <div class="input"><input type="text" id="expectation" name="expectation" /></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="label"><label for="why">why cybervie ?</label></div>
+                        <div class="input"> <input type="text" id="why" name="why" /></div>
+                    </div>
+
+                    <div class="row" id="radios">
+                        <div class="label" id="about"> <label for="know">How did you know about Cybervie ?</label></div>
+                        <div class="input">
+                            
+                            <div class="radio">
+                                <input type="radio" id="referral" name="know" value="referral" required="required"/>
+                                <label for="referral">referral</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" id="web" name="know" value="web" required="required"/>
+                                <label for="web">web</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" id="others" name="know" value="others" required="required"/>
+                                <label for="others">others</label>
+                            </div>
+                            
+                            
+                            <input type="text" id="write" name="write" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="buttons"> 
+                            <input type="submit" value="submit" name="submit" id="submit" />
+                            <input type="submit" value="reset" name="reset" id="reset" />
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
